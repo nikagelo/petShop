@@ -51,15 +51,30 @@ header {
 .slider {
   position: relative;
 }
+
 .sliderItem {
   width: 100%;
   height: 280px;
   justify-content: center;
   align-items: center;
+  display: none;
+}
+
+.active {
   display: flex;
 }
 .firstImage {
   background-image: url(../images/slider1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.secondImage {
+  background-image: url(../images/slider2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.thirdImage {
+  background-image: url(../images/slider3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
