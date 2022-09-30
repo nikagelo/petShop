@@ -75,6 +75,8 @@ header {
   font-size: 24px;
   font-family: "MyriadGEOMtavruli";
   margin-bottom: 30px;
+  text-align: center;
+  line-height: 29px;
 }
 .textWrapper button {
   font-family: "FiraGO";
@@ -99,4 +101,17 @@ header {
 }
 .btnR {
   margin-right: 35px;
+}
+.dots {
+  position: absolute;
+  display: flex;
+  left: 45%;
+  bottom: 5%;
+}
+.dot {
+  width: 12px;
+  height: 5px;
+  background-color: #ffffff;
+  opacity: 50%;
+  margin-left: 8px;
 }
