@@ -1,0 +1,44 @@
+/* Global Styles */
+body {
+  background-color: #fafafa;
+}
+.container {
+  max-width: 1186px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* Header Styles */
+header {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 1276px;
+  border-radius: 0 0 50px 50px;
+  background-color: #ffffff;
+}
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.burgerMenu {
+  width: 25px;
+  border: 3px solid #242424;
+  margin-bottom: 8px;
+  border-radius: 28px;
+}
+.navWrapper {
+  display: flex;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+.nav img {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 13px;
+}
