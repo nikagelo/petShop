@@ -130,3 +130,79 @@ header {
   opacity: 50%;
   margin-left: 8px;
 }
+/* Topics Styles */
+.topicsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.topic {
+  width: 22%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.topicIconWrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  margin-right: 25px;
+  margin-left: 30px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  /* opacity: 20%; */
+}
+
+.topic p {
+  font-size: 14px;
+  font-family: "MyriadGEOMtavruli";
+}
+.firstTopicWrapper {
+  background-color: #f1f7e9;
+}
+.firstTopicIconWrapper {
+  background-color: #e3f0d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstTopicWrapper p span {
+  color: #74b42c;
+}
+.secondTopicWrapper {
+  background-color: #feefe8;
+}
+.secondTopicIconWrapper {
+  background-color: #fddfd2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondTopicWrapper p span {
+  color: #f5621f;
+}
+.thirdTopicWrapper {
+  background-color: #ebf7fc;
+}
+.thirdTopicIconWrapper {
+  background-color: #3cabe0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thirdTopicWrapper p span {
+  color: #3cabe0;
+}
+.fourthTopicWrapper {
+  background-color: #faf4fa;
+}
+.fourthTopicIconWrapper {
+  background-color: #cc96d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourthTopicWrapper p span {
+  color: #cc96d0;
+}
