@@ -7,6 +7,9 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+.flex {
+  display: flex;
+}
 /* Header Styles */
 header {
   margin: 0 auto;
@@ -228,6 +231,10 @@ header {
   background-color: #3cabe0;
   grid-area: fish;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .item3 {
   background-color: #f5ad00;
@@ -244,13 +251,18 @@ header {
   margin-left: 40px;
   margin-top: 72px;
 }
+.item1 img {
+  width: 100%;
+}
 .dogProductWrapper h4 {
   font-size: 14px;
   color: #ffffff;
   font-family: "MyriadGEOMtavruli";
 }
 .dogProductWrapper h2,
-.fishProductWrapper h2 {
+.fishProductWrapper h2,
+.catProductWrapper h2,
+.birdProductWrapper h2 {
   font-size: 18px;
   color: #ffffff;
   line-height: 22px;
@@ -259,7 +271,9 @@ header {
   margin-bottom: 32px;
 }
 .dogProductWrapper h2 span,
-.fishProductWrapper h2 span {
+.fishProductWrapper h2 span,
+.catProductWrapper h2 span,
+.birdProductWrapper h2 span {
   font-size: 24px;
   color: #ffffff;
   font-family: "MyriadGEOMtavruli";
@@ -273,9 +287,24 @@ header {
   font-family: "FiraGO";
   background-color: #ffffff;
 }
-.fishProductWrapper h2 {
+.fishProductWrapper h2,
+.catProductWrapper h2,
+.birdProductWrapper h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.fishButtonContainer {
+  align-items: center;
+}
+.fishButtonContainer img {
+  z-index: 1;
+  margin-right: -10px;
+}
+.birdProductWrapper h2 {
+  position: absolute;
+}
+.item4 div img {
+  margin-top: -20px;
 }
