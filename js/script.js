@@ -165,3 +165,45 @@ function showPrevSlideLatest() {
   renderSlidesLatest();
 }
 initSliderLatest();
+// Brands Js
+
+const nextBtnBrand = document.querySelector("#nextBrand"),
+  prevBtnBrand = document.querySelector("#prevBrand"),
+  slidersBrand = document.querySelectorAll(".sliderItemBrand");
+let activeBrand = 0;
+
+function initSliderBrand() {
+  nextBtnBrand.addEventListener("click", showNextSlideBrand);
+  prevBtnBrand.addEventListener("click", showPrevSlideBrand);
+
+  renderSlidesBrand();
+}
+
+function renderSlidesBrand() {
+  slidersBrand.forEach((slide, i) => {
+    if (i === activeBrand) {
+      slide.classList.add("activeBrand");
+    } else {
+      slide.classList.remove("activeBrand");
+    }
+  });
+}
+
+function showNextSlideBrand() {
+  if (activeBrand === slidersBrand.length - 1) {
+    activeBrand = 0;
+  } else {
+    activeBrand++;
+  }
+  renderSlidesBrand();
+}
+
+function showPrevSlideBrand() {
+  if (activeBrand === 0) {
+    activeBrand = slidersBrand.length - 1;
+  } else {
+    activeBrand--;
+  }
+  renderSlidesBrand();
+}
+initSliderBrand();
