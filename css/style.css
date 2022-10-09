@@ -716,4 +716,50 @@ footer div p {
 .madeBy span {
   color: #74b42c;
 }
-/*  */
+/* About Us Styles */
+.aboutUs div img {
+  margin: 0 15px;
+}
+.aboutUs div a:first-child {
+  color: #c8c8c8;
+  font-size: 14px;
+
+  font-family: "FiraGO";
+}
+.aboutUs div a:last-child {
+  color: #111111;
+  font-size: 14px;
+
+  font-family: "FiraGO";
+}
+.aboutUs div:first-child {
+  margin-bottom: 68px;
+}
+.aboutUs div:nth-child(2) {
+  width: 984px;
+  height: 400px;
+  background-color: #f5621f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 65px auto;
+}
+.aboutUs div h2 {
+  font-size: 28px;
+  font-family: "MyriadGEOMtavruli";
+  color: #111111;
+}
+.aboutUs div p {
+  font-size: 14px;
+  font-family: "FiraGO";
+  color: #111111;
+  line-height: 24px;
+  margin-top: 30px;
+  margin-bottom: 130px;
+}
+.txtWrapper {
+  width: 782px;
+  margin: 0 auto;
+}
+
+/* Contact Styles */
