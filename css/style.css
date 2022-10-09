@@ -643,9 +643,11 @@ footer div p {
   color: #6e6e6e;
   font-family: "FiraGO";
   margin-top: 27px;
+  line-height: 23px;
 }
 .footerNav {
   display: flex;
+  margin-bottom: 130px;
 }
 .footerNav div {
   display: flex;
@@ -673,3 +675,45 @@ footer div p {
   font-family: "FiraGO";
   margin-bottom: 16px;
 }
+.footerNav div span {
+  color: #111111;
+  font-family: "FiraGO";
+  font-size: 12px;
+  margin-top: 16px;
+}
+#fb {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+#fbA {
+  margin-bottom: 0;
+}
+/* Rights styles */
+.rights {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 45px;
+}
+.allRights {
+  font-size: 14px;
+  color: #9c9c9c;
+  font-family: "FiraGO";
+}
+.madeBy {
+  color: #111111;
+  font-size: 14px;
+  font-family: "FiraGO";
+}
+.madeBy span {
+  color: #74b42c;
+}
+/*  */
