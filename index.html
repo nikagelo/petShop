@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <title>Zootopia</title>
   </head>
   <body>
@@ -18,6 +23,10 @@
           <div class="burgerMenu"></div>
           <div class="burgerMenu"></div>
           <div class="burgerMenu"></div>
+        </div>
+        <div class="lang none">
+          <span>GEO</span>
+          <span>ENG</span>
         </div>
         <div class="navWrapper">
           <div class="nav">
@@ -41,40 +50,27 @@
         </div>
       </div>
     </header>
-    <!-- Slider -->
-    <div class="container slider">
-      <div class="pagination">
-        <button class="pg-btn btnL" id="prev">
-          <img src="images/arrow-long-right-1.svg" alt="left arrow" />
-        </button>
-        <button class="pg-btn btnR" id="next">
-          <img src="images/arrow-long-right.svg" alt="right arrow" />
-        </button>
+    <!-- Swiper -->
+    <div class="swiper">
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/slider1.jpg" alt="slider image" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/slider2.jpg" alt="slider image" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/slider3.jpg" alt="slider image" />
+        </div>
       </div>
-      <div class="dots">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next">
+        <img src="images/arrow-long-right.svg" alt="" />
       </div>
-      <div class="sliderWrapper">
-        <div class="sliderItem firstImage active">
-          <div class="textWrapper">
-            <h3>მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</h3>
-            <button>შეიძინე ახლავე</button>
-          </div>
-        </div>
-        <div class="sliderItem secondImage">
-          <div class="textWrapper">
-            <h3>მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</h3>
-            <button>შეიძინე ახლავე</button>
-          </div>
-        </div>
-        <div class="sliderItem thirdImage">
-          <div class="textWrapper">
-            <h3>მიიღე 30%-იანი ფასდაკლება პედიგრის ნებისმიერ პროდუქციაზე</h3>
-            <button>შეიძინე ახლავე</button>
-          </div>
-        </div>
+      <div class="swiper-button-prev">
+        <img src="images/arrow-long-right-1.svg" alt="" />
       </div>
     </div>
     <!-- Topics -->
@@ -104,300 +100,306 @@
         <p>სწრაფი <span> მიტანის </span>სერვისი</p>
       </div>
     </div>
-    <!-- Products -->
-    <div class="grid-container container">
-      <div class="item1">
-        <div class="dogProductWrapper">
-          <h4>ძაღლთა სამყარო</h4>
-          <h2><span>საუკეთესო არჩევანი</span> ერთგული მეგობრისთვის</h2>
-          <button class="productButton">პროდუქციის ნახვა</button>
-        </div>
-        <img src="images/productsDog-removebg-preview.png" alt="dog image" />
-      </div>
-      <div class="item2">
-        <div class="fishProductWrapper">
-          <h2><span>შეუქმენი სასიამოვნო</span> გარემო შენს თევზებს</h2>
-        </div>
-        <div class="flex fishButtonContainer">
-          <img src="images/fish.png" alt="fish image" />
-          <button class="productButton">პროდუქციის ნახვა</button>
-        </div>
-      </div>
-      <div class="item3">
-        <div class="catProductWrapper">
-          <h2>100% ნატურალური საკვები<span>თქვენი კატებისთვის</span></h2>
-        </div>
-        <div class="catBtn">
-          <button class="productButton">პროდუქციის ნახვა</button>
-        </div>
-        <div>
-          <img src="images/catL.png" alt="cat image" />
-          <img src="images/catR.png" alt="cat image" />
-        </div>
-      </div>
-      <div class="item4">
-        <div class="birdProductWrapper">
-          <h2>ყველანაირი აქსესუარი<span>ფრინველებისთვის</span></h2>
-        </div>
-        <div class="birdBtn">
-          <button class="productButton">პროდუქციის ნახვა</button>
-        </div>
-        <div>
-          <img src="images/bird.png" alt="bird image" />
-        </div>
-      </div>
-    </div>
     <!-- Top Products -->
-    <div class="productsPagination">
-      <button class="pg-btn btnL" id="prevProducts">
-        <img src="images/arrow-long-right-1.svg" alt="left arrow" />
-      </button>
-      <div class="container">
-        <div class="topProducts">
-          <a href="#">
-            <h2>ტოპ პროდუქცია</h2>
-          </a>
-          <a href="#">
-            <span>ყველას ნახვა</span>
-          </a>
-        </div>
-        <div class="sliderWrapperTop">
-          <div class="sliderItemTop flex">
-            <div class="topProduct">
-              <div class="topProductImg">
-                <img src="images/food1.png" alt="dog food" />
+    <div class="swiperProducts container">
+      <div class="topProducts">
+        <a href="#">
+          <h2>ტოპ პროდუქცია</h2>
+        </a>
+        <a href="#">
+          <span>ყველას ნახვა</span>
+        </a>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="topProduct">
+            <div class="topProductImage">
+              <img src="images/food1.png" alt="dog food image" />
+            </div>
+            <div class="productTitleWrapper">
+              <h3>პედიგრი</h3>
+              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+            </div>
+            <div class="flex weightWrapper">
+              <div>
+                <div class="weight">600გრ.</div>
+                <div class="weight">2კგ.</div>
               </div>
               <div>
-                <h4>პედიგრი</h4>
-                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-              </div>
-              <div class="weight">
-                <div>
-                  <div>600გრ.</div>
-                  <div>2კგ.</div>
-                </div>
-                <div>
-                  <div>5კგ.</div>
-                  <div>13კგ.</div>
-                </div>
-              </div>
-              <div class="topProductPrices">
-                <div>
-                  <span class="priceN">135₾ </span
-                  ><span class="priceO">160₾</span>
-                </div>
-                <div class="shoppingCart">
-                  <img
-                    src="images/shopping-cart.svg"
-                    alt="shopping-cart Icon"
-                  />
-                </div>
+                <div class="weight">5კგ.</div>
+                <div class="weight">13კგ</div>
               </div>
             </div>
-            <div class="topProduct">
-              <div class="topProductImg">
-                <img src="images/food2.png" alt="dog food" />
+            <div class="pricesWrapper">
+              <div class="prices">
+                <span class="priceN">135₾</span>
+                <span class="priceO">160₾</span>
               </div>
-              <div>
-                <h4>როიალ კანინი</h4>
-                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-              </div>
-              <div class="weight">
-                <div>
-                  <div>400გრ.</div>
-                  <div>8კგ.</div>
-                </div>
-                <div>
-                  <div id="oneBag">1 შეკვრა</div>
-                </div>
-              </div>
-              <div class="topProductPrices">
-                <div>
-                  <span class="price">140.45₾ </span>
-                </div>
-                <div class="shoppingCart">
-                  <img
-                    src="images/shopping-cart.svg"
-                    alt="shopping-cart Icon"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="topProduct">
-              <div class="topProductImg">
-                <img src="images/food3.png" alt="dog food" />
-              </div>
-              <div>
-                <h4>პედიგრი</h4>
-                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-              </div>
-              <div class="weight">
-                <div>
-                  <div>400გრ.</div>
-                </div>
-                <div>
-                  <div>8კგ.</div>
-                </div>
-              </div>
-              <div class="topProductPrices none">
-                <div class="">არ არის მარაგში</div>
-                <div class="shoppingCart">
-                  <img
-                    src="images/shopping-cart.svg"
-                    alt="shopping-cart Icon"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="topProduct">
-              <div class="topProductImg">
-                <img src="images/food1.png" alt="dog food" />
-              </div>
-              <div>
-                <h4>პედიგრი</h4>
-                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-              </div>
-              <div class="weight">
-                <div>
-                  <div>400გრ.</div>
-                </div>
-                <div>
-                  <div>8კგ.</div>
-                </div>
-              </div>
-              <div class="topProductPrices none">
-                <button>დამატებულია</button>
-                <div class="shoppingCart">
-                  <img
-                    src="images/shopping-cart.svg"
-                    alt="shopping-cart Icon"
-                  />
-                </div>
-              </div>
+              <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
             </div>
           </div>
-          <div class="sliderItemTop flex">
-            <div class="topProduct">
-              <div class="topProductImg">
-                <img src="images/food4.png" alt="dog food" />
+        </div>
+        <div class="swiper-slide">
+          <div class="topProduct">
+            <div class="topProductImage">
+              <img src="images/food2.png" alt="dog food image" />
+            </div>
+            <div class="productTitleWrapper">
+              <h3>პედიგრი</h3>
+              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+            </div>
+            <div class="flex weightWrapper">
+              <div>
+                <div class="weight">600გრ.</div>
+                <div class="weight">2კგ.</div>
               </div>
               <div>
-                <h4>პედიგრი</h4>
-                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-              </div>
-              <div class="weight">
-                <div>
-                  <div>600გრ.</div>
-                  <div>2კგ.</div>
-                </div>
-                <div>
-                  <div>5კგ.</div>
-                  <div>13კგ.</div>
-                </div>
-              </div>
-              <div class="topProductPrices">
-                <div>
-                  <span class="priceN">135₾ </span
-                  ><span class="priceO">160₾</span>
-                </div>
-                <div class="shoppingCart">
-                  <img
-                    src="images/shopping-cart.svg"
-                    alt="shopping-cart Icon"
-                  />
-                </div>
+                <div class="weight">5კგ.</div>
+                <div class="weight">13კგ</div>
               </div>
             </div>
-            <div class="topProduct">
-              <div class="topProductImg">
-                <img src="images/food3.png" alt="dog food" />
+            <div class="pricesWrapper">
+              <div class="prices">
+                <span class="priceN">135₾</span>
+                <span class="priceO">160₾</span>
+              </div>
+              <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="topProduct">
+            <div class="topProductImage">
+              <img src="images/food4.png" alt="dog food image" />
+            </div>
+            <div class="productTitleWrapper">
+              <h3>პედიგრი</h3>
+              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+            </div>
+            <div class="flex weightWrapper">
+              <div>
+                <div class="weight">600გრ.</div>
+                <div class="weight">2კგ.</div>
               </div>
               <div>
-                <h4>როიალ კანინი</h4>
-                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-              </div>
-              <div class="weight">
-                <div>
-                  <div>400გრ.</div>
-                  <div>8კგ.</div>
-                </div>
-                <div>
-                  <div id="oneBag">1 შეკვრა</div>
-                </div>
-              </div>
-              <div class="topProductPrices">
-                <div>
-                  <span class="price">140.45₾ </span>
-                </div>
-                <div class="shoppingCart">
-                  <img
-                    src="images/shopping-cart.svg"
-                    alt="shopping-cart Icon"
-                  />
-                </div>
+                <div class="weight">5კგ.</div>
+                <div class="weight">13კგ</div>
               </div>
             </div>
-            <div class="topProduct">
-              <div class="topProductImg">
-                <img src="images/food3.png" alt="dog food" />
+            <div class="pricesWrapper">
+              <div class="prices">
+                <span class="priceN">135₾</span>
+                <span class="priceO">160₾</span>
+              </div>
+              <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="topProduct">
+            <div class="topProductImage">
+              <img src="images/food1.png" alt="dog food image" />
+            </div>
+            <div class="productTitleWrapper">
+              <h3>პედიგრი</h3>
+              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+            </div>
+            <div class="flex weightWrapper">
+              <div>
+                <div class="weight">600გრ.</div>
+                <div class="weight">2კგ.</div>
               </div>
               <div>
-                <h4>პედიგრი</h4>
-                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-              </div>
-              <div class="weight">
-                <div>
-                  <div>400გრ.</div>
-                </div>
-                <div>
-                  <div>8კგ.</div>
-                </div>
-              </div>
-              <div class="topProductPrices none">
-                <div class="">არ არის მარაგში</div>
-                <div class="shoppingCart">
-                  <img
-                    src="images/shopping-cart.svg"
-                    alt="shopping-cart Icon"
-                  />
-                </div>
+                <div class="weight">5კგ.</div>
+                <div class="weight">13კგ</div>
               </div>
             </div>
-            <div class="topProduct">
-              <div class="topProductImg">
-                <img src="images/food4.png" alt="dog food" />
+            <div class="pricesWrapper">
+              <div class="prices">
+                <span class="priceN">135₾</span>
+                <span class="priceO">160₾</span>
+              </div>
+              <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="topProduct">
+            <div class="topProductImage">
+              <img src="images/food4.png" alt="dog food image" />
+            </div>
+            <div class="productTitleWrapper">
+              <h3>პედიგრი</h3>
+              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+            </div>
+            <div class="flex weightWrapper">
+              <div>
+                <div class="weight">600გრ.</div>
+                <div class="weight">2კგ.</div>
               </div>
               <div>
-                <h4>პედიგრი</h4>
-                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+                <div class="weight">5კგ.</div>
+                <div class="weight">13კგ</div>
               </div>
-              <div class="weight">
-                <div>
-                  <div>400გრ.</div>
-                </div>
-                <div>
-                  <div>8კგ.</div>
-                </div>
+            </div>
+            <div class="pricesWrapper">
+              <div class="prices">
+                <span class="priceN">135₾</span>
+                <span class="priceO">160₾</span>
               </div>
-              <div class="topProductPrices none">
-                <button>დამატებულია</button>
-                <div class="shoppingCart">
-                  <img
-                    src="images/shopping-cart.svg"
-                    alt="shopping-cart Icon"
-                  />
-                </div>
+              <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="topProduct">
+            <div class="topProductImage">
+              <img src="images/food2.png" alt="dog food image" />
+            </div>
+            <div class="productTitleWrapper">
+              <h3>პედიგრი</h3>
+              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+            </div>
+            <div class="flex weightWrapper">
+              <div>
+                <div class="weight">600გრ.</div>
+                <div class="weight">2კგ.</div>
               </div>
+              <div>
+                <div class="weight">5კგ.</div>
+                <div class="weight">13კგ</div>
+              </div>
+            </div>
+            <div class="pricesWrapper">
+              <div class="prices">
+                <span class="priceN">135₾</span>
+                <span class="priceO">160₾</span>
+              </div>
+              <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="topProduct">
+            <div class="topProductImage">
+              <img src="images/food1.png" alt="dog food image" />
+            </div>
+            <div class="productTitleWrapper">
+              <h3>პედიგრი</h3>
+              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+            </div>
+            <div class="flex weightWrapper">
+              <div>
+                <div class="weight">600გრ.</div>
+                <div class="weight">2კგ.</div>
+              </div>
+              <div>
+                <div class="weight">5კგ.</div>
+                <div class="weight">13კგ</div>
+              </div>
+            </div>
+            <div class="pricesWrapper">
+              <div class="prices">
+                <span class="priceN">135₾</span>
+                <span class="priceO">160₾</span>
+              </div>
+              <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="topProduct">
+            <div class="topProductImage">
+              <img src="images/food1.png" alt="dog food image" />
+            </div>
+            <div class="productTitleWrapper">
+              <h3>პედიგრი</h3>
+              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+            </div>
+            <div class="flex weightWrapper">
+              <div>
+                <div class="weight">600გრ.</div>
+                <div class="weight">2კგ.</div>
+              </div>
+              <div>
+                <div class="weight">5კგ.</div>
+                <div class="weight">13კგ</div>
+              </div>
+            </div>
+            <div class="pricesWrapper">
+              <div class="prices">
+                <span class="priceN">135₾</span>
+                <span class="priceO">160₾</span>
+              </div>
+              <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="topProduct">
+            <div class="topProductImage">
+              <img src="images/food1.png" alt="dog food image" />
+            </div>
+            <div class="productTitleWrapper">
+              <h3>პედიგრი</h3>
+              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+            </div>
+            <div class="flex weightWrapper">
+              <div>
+                <div class="weight">600გრ.</div>
+                <div class="weight">2კგ.</div>
+              </div>
+              <div>
+                <div class="weight">5კგ.</div>
+                <div class="weight">13კგ</div>
+              </div>
+            </div>
+            <div class="pricesWrapper">
+              <div class="prices">
+                <span class="priceN">135₾</span>
+                <span class="priceO">160₾</span>
+              </div>
+              <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="topProduct">
+            <div class="topProductImage">
+              <img src="images/food1.png" alt="dog food image" />
+            </div>
+            <div class="productTitleWrapper">
+              <h3>პედიგრი</h3>
+              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+            </div>
+            <div class="flex weightWrapper">
+              <div>
+                <div class="weight">600გრ.</div>
+                <div class="weight">2კგ.</div>
+              </div>
+              <div>
+                <div class="weight">5კგ.</div>
+                <div class="weight">13კგ</div>
+              </div>
+            </div>
+            <div class="pricesWrapper">
+              <div class="prices">
+                <span class="priceN">135₾</span>
+                <span class="priceO">160₾</span>
+              </div>
+              <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
             </div>
           </div>
         </div>
       </div>
-      <div class="paginationOfProducts">
-        <button class="pg-btn btnR" id="nextProducts">
-          <img src="images/arrow-long-right.svg" alt="right arrow" />
-        </button>
+      <div class="swiper-button-next-product">
+        <img src="images/arrow-long-right.svg" alt="" />
+      </div>
+      <div class="swiper-button-prev-product">
+        <img src="images/arrow-long-right-1.svg" alt="" />
       </div>
     </div>
+
     <!-- Cards -->
     <div class="cards container flex">
       <div class="cardA">
@@ -432,249 +434,266 @@
             <span class="priceOT">160₾</span>
           </div>
         </div>
-        <div class="bestSellerWrapper">
-          <button class="pg-btn btnL black" id="prevBestSeller">
-            <img src="images/arrow-long-right-black.svg" alt="left arrow" />
-          </button>
-          <div class="bestSellerItem activeBestSeller">
-            <img src="images/dogFood.png" alt="dog food" /> <span>პედიგრი</span>
+        <div class="swiperBestSeller">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/dogFood.png" alt="dog food" />
+              <h3>პედიგრი</h3>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dogFood.png" alt="dog food" />
+              <h3>პედიგრი</h3>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dogFood.png" alt="dog food" />
+              <h3>პედიგრი</h3>
+            </div>
           </div>
-          <div class="bestSellerItem">
-            <img src="images/food3.png" alt="dog food" /> <span>პედიგრი</span>
-          </div>
-          <div class="bestSellerItem">
-            <img src="images/food1.png" alt="dog food" /> <span>პედიგრი</span>
-          </div>
-          <button class="pg-btn btnR black" id="nextBestSeller">
-            <img src="images/arrow-long-right-1-black.svg" alt="right arrow" />
-          </button>
         </div>
         <button class="productButton black">პროდუქციის ნახვა</button>
       </div>
     </div>
     <!-- Latest -->
-    <div class="latestWrapper">
-      <button class="pg-btn btnL" id="prevLatest">
-        <img src="images/arrow-long-right-1.svg" alt="left arrow" />
-      </button>
-
-      <div class="container">
-        <div class="topProducts">
-          <a href="#">
-            <h2>ბოლოს დამატებული</h2>
-          </a>
-          <a href="#">
-            <span>ყველას ნახვა</span>
-          </a>
-        </div>
-        <div class="sliderItemLatest flex">
-          <div class="topProduct">
-            <div class="topProductImg">
-              <img src="images/food4.png" alt="dog food" />
-            </div>
-            <div>
-              <h4>პედიგრი</h4>
-              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-            </div>
-            <div class="weight">
-              <div>
-                <div>600გრ.</div>
-                <div>2კგ.</div>
-              </div>
-              <div>
-                <div>5კგ.</div>
-                <div>13კგ.</div>
-              </div>
-            </div>
-            <div class="topProductPrices">
-              <div>
-                <span class="priceN">135₾ </span
-                ><span class="priceO">160₾</span>
-              </div>
-              <div class="shoppingCart">
-                <img src="images/shopping-cart.svg" alt="shopping-cart Icon" />
-              </div>
-            </div>
-          </div>
-          <div class="topProduct">
-            <div class="topProductImg">
-              <img src="images/food3.png" alt="dog food" />
-            </div>
-            <div>
-              <h4>როიალ კანინი</h4>
-              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-            </div>
-            <div class="weight">
-              <div>
-                <div>400გრ.</div>
-                <div>8კგ.</div>
-              </div>
-              <div>
-                <div id="oneBag">1 შეკვრა</div>
-              </div>
-            </div>
-            <div class="topProductPrices">
-              <div>
-                <span class="price">140.45₾ </span>
-              </div>
-              <div class="shoppingCart">
-                <img src="images/shopping-cart.svg" alt="shopping-cart Icon" />
-              </div>
-            </div>
-          </div>
-          <div class="topProduct">
-            <div class="topProductImg">
-              <img src="images/food3.png" alt="dog food" />
-            </div>
-            <div>
-              <h4>პედიგრი</h4>
-              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-            </div>
-            <div class="weight">
-              <div>
-                <div>400გრ.</div>
-              </div>
-              <div>
-                <div>8კგ.</div>
-              </div>
-            </div>
-            <div class="topProductPrices none">
-              <div class="">არ არის მარაგში</div>
-              <div class="shoppingCart">
-                <img src="images/shopping-cart.svg" alt="shopping-cart Icon" />
-              </div>
-            </div>
-          </div>
-          <div class="topProduct">
-            <div class="topProductImg">
-              <img src="images/food4.png" alt="dog food" />
-            </div>
-            <div>
-              <h4>პედიგრი</h4>
-              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-            </div>
-            <div class="weight">
-              <div>
-                <div>400გრ.</div>
-              </div>
-              <div>
-                <div>8კგ.</div>
-              </div>
-            </div>
-            <div class="topProductPrices none">
-              <button>დამატებულია</button>
-              <div class="shoppingCart">
-                <img src="images/shopping-cart.svg" alt="shopping-cart Icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="sliderItemLatest flex">
-          <div class="topProduct">
-            <div class="topProductImg">
-              <img src="images/food1.png" alt="dog food" />
-            </div>
-            <div>
-              <h4>პედიგრი</h4>
-              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-            </div>
-            <div class="weight">
-              <div>
-                <div>600გრ.</div>
-                <div>2კგ.</div>
-              </div>
-              <div>
-                <div>5კგ.</div>
-                <div>13კგ.</div>
-              </div>
-            </div>
-            <div class="topProductPrices">
-              <div>
-                <span class="priceN">135₾ </span
-                ><span class="priceO">160₾</span>
-              </div>
-              <div class="shoppingCart">
-                <img src="images/shopping-cart.svg" alt="shopping-cart Icon" />
-              </div>
-            </div>
-          </div>
-          <div class="topProduct">
-            <div class="topProductImg">
-              <img src="images/food4.png" alt="dog food" />
-            </div>
-            <div>
-              <h4>როიალ კანინი</h4>
-              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-            </div>
-            <div class="weight">
-              <div>
-                <div>400გრ.</div>
-                <div>8კგ.</div>
-              </div>
-              <div>
-                <div id="oneBag">1 შეკვრა</div>
-              </div>
-            </div>
-            <div class="topProductPrices">
-              <div>
-                <span class="price">140.45₾ </span>
-              </div>
-              <div class="shoppingCart">
-                <img src="images/shopping-cart.svg" alt="shopping-cart Icon" />
-              </div>
-            </div>
-          </div>
-          <div class="topProduct">
-            <div class="topProductImg">
-              <img src="images/food2.png" alt="dog food" />
-            </div>
-            <div>
-              <h4>პედიგრი</h4>
-              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-            </div>
-            <div class="weight">
-              <div>
-                <div>400გრ.</div>
-              </div>
-              <div>
-                <div>8კგ.</div>
-              </div>
-            </div>
-            <div class="topProductPrices none">
-              <div class="">არ არის მარაგში</div>
-              <div class="shoppingCart">
-                <img src="images/shopping-cart.svg" alt="shopping-cart Icon" />
-              </div>
-            </div>
-          </div>
-          <div class="topProduct">
-            <div class="topProductImg">
-              <img src="images/food3.png" alt="dog food" />
-            </div>
-            <div>
-              <h4>პედიგრი</h4>
-              <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
-            </div>
-            <div class="weight">
-              <div>
-                <div>400გრ.</div>
-              </div>
-              <div>
-                <div>8კგ.</div>
-              </div>
-            </div>
-            <div class="topProductPrices none">
-              <button>დამატებულია</button>
-              <div class="shoppingCart">
-                <img src="images/shopping-cart.svg" alt="shopping-cart Icon" />
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="container hidden">
+      <div class="topProducts">
+        <a href="#">
+          <h2>ბოლოს დამატებული</h2>
+        </a>
+        <a href="#">
+          <span>ყველას ნახვა</span>
+        </a>
       </div>
-      <button class="pg-btn btnR" id="nextLatest">
-        <img src="images/arrow-long-right.svg" alt="right arrow" />
-      </button>
+      <div class="swiper-latest">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="topProduct">
+              <div class="topProductImage">
+                <img src="images/food1.png" alt="dog food image" />
+              </div>
+              <div class="productTitleWrapper">
+                <h3>პედიგრი</h3>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+              </div>
+              <div class="flex weightWrapper">
+                <div>
+                  <div class="weight">600გრ.</div>
+                  <div class="weight">2კგ.</div>
+                </div>
+                <div>
+                  <div class="weight">5კგ.</div>
+                  <div class="weight">13კგ</div>
+                </div>
+              </div>
+              <div class="pricesWrapper">
+                <div class="prices">
+                  <span class="priceN">135₾</span>
+                  <span class="priceO">160₾</span>
+                </div>
+                <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="topProduct">
+              <div class="topProductImage">
+                <img src="images/food1.png" alt="dog food image" />
+              </div>
+              <div class="productTitleWrapper">
+                <h3>პედიგრი</h3>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+              </div>
+              <div class="flex weightWrapper">
+                <div>
+                  <div class="weight">600გრ.</div>
+                  <div class="weight">2კგ.</div>
+                </div>
+                <div>
+                  <div class="weight">5კგ.</div>
+                  <div class="weight">13კგ</div>
+                </div>
+              </div>
+              <div class="pricesWrapper">
+                <div class="prices">
+                  <span class="priceN">135₾</span>
+                  <span class="priceO">160₾</span>
+                </div>
+                <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="topProduct">
+              <div class="topProductImage">
+                <img src="images/food1.png" alt="dog food image" />
+              </div>
+              <div class="productTitleWrapper">
+                <h3>პედიგრი</h3>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+              </div>
+              <div class="flex weightWrapper">
+                <div>
+                  <div class="weight">600გრ.</div>
+                  <div class="weight">2კგ.</div>
+                </div>
+                <div>
+                  <div class="weight">5კგ.</div>
+                  <div class="weight">13კგ</div>
+                </div>
+              </div>
+              <div class="pricesWrapper">
+                <div class="prices">
+                  <span class="priceN">135₾</span>
+                  <span class="priceO">160₾</span>
+                </div>
+                <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="topProduct">
+              <div class="topProductImage">
+                <img src="images/food1.png" alt="dog food image" />
+              </div>
+              <div class="productTitleWrapper">
+                <h3>პედიგრი</h3>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+              </div>
+              <div class="flex weightWrapper">
+                <div>
+                  <div class="weight">600გრ.</div>
+                  <div class="weight">2კგ.</div>
+                </div>
+                <div>
+                  <div class="weight">5კგ.</div>
+                  <div class="weight">13კგ</div>
+                </div>
+              </div>
+              <div class="pricesWrapper">
+                <div class="prices">
+                  <span class="priceN">135₾</span>
+                  <span class="priceO">160₾</span>
+                </div>
+                <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="topProduct">
+              <div class="topProductImage">
+                <img src="images/food1.png" alt="dog food image" />
+              </div>
+              <div class="productTitleWrapper">
+                <h3>პედიგრი</h3>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+              </div>
+              <div class="flex weightWrapper">
+                <div>
+                  <div class="weight">600გრ.</div>
+                  <div class="weight">2კგ.</div>
+                </div>
+                <div>
+                  <div class="weight">5კგ.</div>
+                  <div class="weight">13კგ</div>
+                </div>
+              </div>
+              <div class="pricesWrapper">
+                <div class="prices">
+                  <span class="priceN">135₾</span>
+                  <span class="priceO">160₾</span>
+                </div>
+                <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="topProduct">
+              <div class="topProductImage">
+                <img src="images/food1.png" alt="dog food image" />
+              </div>
+              <div class="productTitleWrapper">
+                <h3>პედიგრი</h3>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+              </div>
+              <div class="flex weightWrapper">
+                <div>
+                  <div class="weight">600გრ.</div>
+                  <div class="weight">2კგ.</div>
+                </div>
+                <div>
+                  <div class="weight">5კგ.</div>
+                  <div class="weight">13კგ</div>
+                </div>
+              </div>
+              <div class="pricesWrapper">
+                <div class="prices">
+                  <span class="priceN">135₾</span>
+                  <span class="priceO">160₾</span>
+                </div>
+                <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="topProduct">
+              <div class="topProductImage">
+                <img src="images/food1.png" alt="dog food image" />
+              </div>
+              <div class="productTitleWrapper">
+                <h3>პედიგრი</h3>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+              </div>
+              <div class="flex weightWrapper">
+                <div>
+                  <div class="weight">600გრ.</div>
+                  <div class="weight">2კგ.</div>
+                </div>
+                <div>
+                  <div class="weight">5კგ.</div>
+                  <div class="weight">13კგ</div>
+                </div>
+              </div>
+              <div class="pricesWrapper">
+                <div class="prices">
+                  <span class="priceN">135₾</span>
+                  <span class="priceO">160₾</span>
+                </div>
+                <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="topProduct">
+              <div class="topProductImage">
+                <img src="images/food1.png" alt="dog food image" />
+              </div>
+              <div class="productTitleWrapper">
+                <h3>პედიგრი</h3>
+                <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+              </div>
+              <div class="flex weightWrapper">
+                <div>
+                  <div class="weight">600გრ.</div>
+                  <div class="weight">2კგ.</div>
+                </div>
+                <div>
+                  <div class="weight">5კგ.</div>
+                  <div class="weight">13კგ</div>
+                </div>
+              </div>
+              <div class="pricesWrapper">
+                <div class="prices">
+                  <span class="priceN">135₾</span>
+                  <span class="priceO">160₾</span>
+                </div>
+                <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next-latest"></div>
+        <div class="swiper-button-prev-latest"></div>
+      </div>
     </div>
     <!-- Banner -->
     <div class="container banner">
@@ -687,77 +706,44 @@
       </div>
     </div>
     <!-- Brands -->
-    <div class="brands">
-      <button class="pg-btn btnL" id="prevBrand">
-        <img src="images/arrow-long-right-1.svg" alt="left arrow" />
-      </button>
+    <div class="brands container">
+      <div class="topProducts">
+        <a href="#">
+          <h2>ბრენდები</h2>
+        </a>
+      </div>
 
-      <div class="container">
-        <div class="sliderItemBrand">
-          <div>
-            <a href="#"
-              ><img src="images/royalCanin.png" alt="royalCanin image"
-            /></a>
+      <div class="swiper-brand hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/royalCanin.png" alt="royalCanin" />
           </div>
-          <div>
-            <a href="#"
-              ><img src="images/perfectFit.png" alt="perfectFit image"
-            /></a>
+          <div class="swiper-slide">
+            <img src="images/perfectFit.png" alt="perfectFit" />
           </div>
-          <div>
-            <a href="#"
-              ><img src="images/eukanuba.png" alt="eukanuba image"
-            /></a>
+          <div class="swiper-slide">
+            <img src="images/eukanuba.png" alt="eukanuba" />
           </div>
-          <div>
-            <a href="#"
-              ><img src="images/grandorf.png" alt="grandorf image"
-            /></a>
+          <div class="swiper-slide">
+            <img src="images/grandorf.png" alt="grandorf" />
           </div>
-          <div>
-            <a href="#"><img src="images/chappi.png" alt="chappi image" /></a>
+          <div class="swiper-slide">
+            <img src="images/chappi.png" alt="chappi" />
           </div>
-          <div>
-            <a href="#"><img src="images/go.png" alt="go image" /></a>
+          <div class="swiper-slide"><img src="images/go.png" alt="go" /></div>
+          <div class="swiper-slide">
+            <img src="images/perfectFit.png" alt="perfectFit" />
           </div>
-        </div>
-        <div class="sliderItemBrand">
-          <div>
-            <a href="#">
-              <img src="images/perfectFit.png" alt="perfectFit image" />
-            </a>
+          <div class="swiper-slide">
+            <img src="images/royalCanin.png" alt="royalCanin" />
           </div>
-          <div>
-            <a href="#">
-              <img src="images/royalCanin.png" alt="royalCanin image" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="images/grandorf.png" alt="grandorf image" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="images/go.png" alt="go image" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="images/eukanuba.png" alt="eukanuba image" />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="images/chappi.png" alt="chappi image" />
-            </a>
+          <div class="swiper-slide">
+            <img src="images/chappi.png" alt="chappi" />
           </div>
         </div>
       </div>
-      <button class="pg-btn btnR" id="nextBrand">
-        <img src="images/arrow-long-right.svg" alt="right arrow" />
-      </button>
     </div>
+
     <!-- Footer -->
     <footer class="container flex footerNav">
       <div>
@@ -771,33 +757,73 @@
 
       <div>
         <h5>კატეგორიები</h5>
-        <a href="#">ძაღლები</a>
-        <a href="#">კატები</a>
-        <a href="#">თევზები</a>
-        <a href="#">ფრინველები</a>
-        <a href="#">მღრღნელები</a>
-        <a href="#">რეპტილიები</a>
+        <ul>
+          <li>
+            <a href="#">რეპტილიები</a>
+          </li>
+          <li>
+            <a href="#">მღრღნელები</a>
+          </li>
+          <li>
+            <a href="#">ფრინველები</a>
+          </li>
+          <li>
+            <a href="#">თევზები</a>
+          </li>
+          <li>
+            <a href="#">კატები</a>
+          </li>
+          <li>
+            <a href="#">ძაღლები</a>
+          </li>
+        </ul>
       </div>
       <div>
         <div>
           <h5>მენიუ</h5>
-          <a href="#">მთავარი</a>
-          <a href="aboutUs.html">ჩვენს შესახებ</a>
+          <ul>
+            <li>
+              <a href="#">მთავარი</a>
+            </li>
+            <li>
+              <a href="aboutUs.html">ჩვენს შესახებ</a>
+            </li>
+          </ul>
         </div>
 
         <div>
           <h6>წესები და პირობები</h6>
-          <a href="#">ავტორიზაცია</a>
-          <a href="#">რეგისტრაცია</a>
-          <a href="contact.html">კონტაქტი</a>
+          <ul>
+            <li>
+              <a href="#">ავტორიზაცია</a>
+            </li>
+            <li>
+              <a href="#">რეგისტრაცია</a>
+            </li>
+            <li>
+              <a href="contact.html">კონტაქტი</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div>
         <div>
           <h5>კონტაქტი</h5>
-          <span>თბილისი, დადიასნი ქ. N:124</span>
-          <span>(+995) 555 333 222</span>
-          <span>example@gmail.com</span>
+          <ul>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/124+%E1%83%AA%E1%83%9D%E1%83%A2%E1%83%9C%E1%83%94+%E1%83%93%E1%83%90%E1%83%93%E1%83%98%E1%83%90%E1%83%9C%E1%83%98%E1%83%A1+%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%90,+%E1%83%97%E1%83%91%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1%E1%83%98/@41.73662,44.7909607,17z/data=!3m1!4b1!4m5!3m4!1s0x404472bbfbd35bd5:0x21ffe796cbb8c0d9!8m2!3d41.7366161!4d44.79544"
+                target="_blank"
+                >თბილისი, დადიასნი ქ. N:124</a
+              >
+            </li>
+            <li>
+              <a href="tel:+995555333222">(+995) 555 333 222</a>
+            </li>
+            <li>
+              <a href="mailto:example@gmail.com">example@gmail.com</a>
+            </li>
+          </ul>
           <div id="fb">
             <a id="fbA" href="#">
               <img src="images/facebook-f.svg" alt="facebook icon" />
@@ -814,6 +840,7 @@
         <img src="images/banks.png" alt="banks icons" />
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
