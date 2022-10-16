@@ -1,4 +1,7 @@
 @media (max-width: 1024px) {
+  body {
+    margin: 0 5%;
+  }
   .container {
     max-width: 1024px;
   }
@@ -15,17 +18,15 @@
   }
   .headerWrapper {
     justify-content: space-between;
-    padding: 0 32px;
+
     width: unset;
     flex-wrap: wrap;
   }
   /* About us */
+
   .topicWrapper :first-child,
   .topicWrapper img {
     display: none;
-  }
-  .aboutUs div:first-child {
-    padding-left: 35px;
   }
   .aboutUs div:nth-child(2) {
     width: 100%;
@@ -53,6 +54,7 @@
   .menu {
     justify-content: space-around;
     margin-bottom: 13px;
+    flex-wrap: wrap;
   }
   .burgerMenuAboutUs {
     width: 40px;
@@ -70,5 +72,8 @@
     height: 0;
     border: 1px solid #ffffff;
     margin-bottom: 5px;
+  }
+  .contactDiv {
+    margin-top: 20px;
   }
 }
