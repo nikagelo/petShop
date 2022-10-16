@@ -20,6 +20,23 @@ var swiperProducts = new Swiper(".swiperProducts", {
     nextEl: ".swiper-button-next-product",
     prevEl: ".swiper-button-prev-product",
   },
+  breakpoints: {
+    400: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
 });
 // Best Selllers JS
 var swiperBestSeller = new Swiper(".swiperBestSeller", {
@@ -42,10 +59,10 @@ var swiperLatest = new Swiper(".swiper-latest", {
 var swiperBrand = new Swiper(".swiper-brand", {
   slidesPerView: 6,
   spaceBetween: 0,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 2,

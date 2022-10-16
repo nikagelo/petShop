@@ -77,3 +77,74 @@
     margin-top: 20px;
   }
 }
+@media (max-width: 480px) {
+  .swiper-button-prev,
+  .swiper-button-next,
+  .item3 div img:last-child {
+    display: none;
+  }
+  body {
+    margin: unset;
+  }
+  .swiper {
+    margin-top: -113px;
+  }
+  header {
+    position: relative;
+    z-index: 2;
+  }
+  .topicsWrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .topic {
+    width: 75%;
+    margin-bottom: 10px;
+  }
+  .firstTopicWrapper {
+    box-shadow: 0px 30px 15px -15px rgb(117 180 44 / 10%);
+  }
+  .secondTopicWrapper {
+    box-shadow: 0px 30px 15px -15px rgb(245 99 31 / 10%);
+  }
+  .thirdTopicWrapper {
+    box-shadow: 0px 30px 15px -15px rgb(60 172 224 / 10%);
+  }
+  .fourthTopicWrapper {
+    box-shadow: 0px 30px 15px -15px rgb(204 150 208 / 10%);
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .dogProductWrapper button {
+    margin-bottom: 10px;
+  }
+  .item4 div img {
+    position: unset;
+    margin-top: unset;
+  }
+  .item3 div img:first-child {
+    width: 150px;
+  }
+  .swiperProducts .swiper-slide,
+  .weightWrapper,
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cardB {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .cardC .flex {
+    justify-content: flex-end;
+  }
+}
