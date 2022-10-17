@@ -1,5 +1,5 @@
 // First Swiper
-let swiperMain = new Swiper(".swiper", {
+const swiperMain = new Swiper(".swiper", {
   cssMode: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -13,7 +13,7 @@ let swiperMain = new Swiper(".swiper", {
   keyboard: true,
 });
 //Products JS
-var swiperProducts = new Swiper(".swiperProducts", {
+const swiperProducts = new Swiper(".swiperProducts", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -37,7 +37,7 @@ var swiperProducts = new Swiper(".swiperProducts", {
   },
 });
 // Best Selllers JS
-var swiperBestSeller = new Swiper(".swiperBestSeller", {
+const swiperBestSeller = new Swiper(".swiperBestSeller", {
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -45,7 +45,7 @@ var swiperBestSeller = new Swiper(".swiperBestSeller", {
   },
 });
 // Latest
-var swiperLatest = new Swiper(".swiper-latest", {
+const swiperLatest = new Swiper(".swiper-latest", {
   breakpoints: {
     400: {
       slidesPerView: 1,
@@ -69,11 +69,7 @@ var swiperLatest = new Swiper(".swiper-latest", {
   },
 });
 // Brand
-var swiperBrand = new Swiper(".swiper-brand", {
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+const swiperBrand = new Swiper(".swiper-brand", {
   breakpoints: {
     400: {
       slidesPerView: 1,
