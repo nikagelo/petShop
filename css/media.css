@@ -78,6 +78,9 @@
   }
 }
 @media (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
   .swiper-button-prev,
   .swiper-button-next,
   .item3 div img:last-child {
@@ -126,6 +129,7 @@
   .item4 div img {
     position: unset;
     margin-top: unset;
+    width: 150px;
   }
   .item3 div img:first-child {
     width: 150px;
@@ -146,5 +150,25 @@
   }
   .cardC .flex {
     justify-content: flex-end;
+  }
+  .item4 {
+    justify-content: space-between;
+  }
+  .birdProductWrapper h2 {
+    margin-top: 20px;
+  }
+  .dogProductWrapper {
+    margin-top: 32px;
+  }
+
+  .banner div {
+    margin-top: unset;
+    margin-left: 50px;
+  }
+  .banner div span {
+    font-size: 18px;
+  }
+  .brands {
+    margin: 0 5%;
   }
 }

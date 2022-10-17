@@ -14,11 +14,9 @@ let swiperMain = new Swiper(".swiper", {
 });
 //Products JS
 var swiperProducts = new Swiper(".swiperProducts", {
-  slidesPerView: 4,
-  spaceBetween: 26,
   navigation: {
-    nextEl: ".swiper-button-next-product",
-    prevEl: ".swiper-button-prev-product",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     400: {
@@ -42,28 +40,44 @@ var swiperProducts = new Swiper(".swiperProducts", {
 var swiperBestSeller = new Swiper(".swiperBestSeller", {
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next-best",
-    prevEl: ".swiper-button-prev-best",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 // Latest
 var swiperLatest = new Swiper(".swiper-latest", {
-  slidesPerView: 4,
-  spaceBetween: 26,
+  breakpoints: {
+    400: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
   navigation: {
-    nextEl: ".swiper-button-next-latest",
-    prevEl: ".swiper-button-prev-latest",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 // Brand
 var swiperBrand = new Swiper(".swiper-brand", {
-  slidesPerView: 6,
-  spaceBetween: 0,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
   },
   breakpoints: {
+    400: {
+      slidesPerView: 1,
+    },
     640: {
       slidesPerView: 2,
       spaceBetween: 20,
