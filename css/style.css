@@ -10,6 +10,9 @@ body {
 .flex {
   display: flex;
 }
+.center {
+  align-items: center;
+}
 .hidden {
   overflow: hidden;
 }
@@ -728,19 +731,16 @@ footer div p {
   color: #74b42c;
 }
 /* About Us Styles */
-.aboutUs div img,
-.contact div img {
+.topicWrapper img {
   margin: 0 15px;
 }
-.aboutUs div a:first-child,
-.contact div a:first-child {
+.category {
   color: #c8c8c8;
   font-size: 14px;
 
   font-family: "FiraGO";
 }
-.aboutUs div a:last-child,
-.contact div a:last-child {
+.subCategory {
   color: #111111;
   font-size: 14px;
 
@@ -805,4 +805,165 @@ footer div p {
   color: #111111;
   font-family: "FiraGO";
   line-height: 22px;
+}
+/* Product Page Styles */
+.info {
+  margin-top: 60px;
+  margin-bottom: 65px;
+}
+.infoImages div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+.infoImages div:first-child div {
+  width: 75px;
+  height: 50px;
+  border-radius: 0 0 10px 10px;
+}
+.infoImages div:first-child img {
+  width: 75px;
+  height: 75px;
+}
+.infoImages div:nth-child(2) img {
+  margin-left: 26px;
+  margin-right: 26px;
+}
+.infoImages div:first-child img:last-child {
+  border-radius: 10px;
+}
+.productInfo h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 14px;
+}
+.productInfo div div > span {
+  color: #9c9c9c;
+  font-size: 12px;
+}
+
+.marginL {
+  margin-left: 26px;
+}
+
+.productInfo div div div img {
+  margin-right: 10px;
+}
+
+.productInfo div:first-child div div span {
+  color: #111111;
+  font-family: "FiraGO";
+  font-size: 12px;
+}
+.weights {
+  margin-top: 28px;
+}
+.weights .weight {
+  margin-left: 0;
+}
+.productInfo p {
+  color: #111111;
+  font-family: "FiraGO";
+  font-size: 12px;
+  max-width: 378px;
+  line-height: 19px;
+}
+.productInfo button {
+  color: #9c9c9c;
+  font-family: "FiraGO";
+  font-size: 12px;
+  border: none;
+  background-color: transparent;
+}
+.infoButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+.infoButton img {
+  transform: rotate(90deg);
+  margin-top: 5px;
+}
+.priceAndCart {
+  margin-left: 56px;
+}
+.counterWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: 32px;
+  margin-bottom: 30px;
+}
+.counterWrapper span,
+.counterWrapper div {
+  font-size: 40px;
+  padding: 5px;
+}
+.counterWrapper button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+.addCart {
+  width: 200px;
+  background-color: #74b42c;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.addCart span {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.addCart div {
+  background-color: #ffffff;
+  padding: 9px;
+  border-radius: 4px;
+  margin-left: 28px;
+}
+.moreText {
+  display: none;
+}
+.productTxt .none {
+  display: inline;
+}
+#productTxt.show-more .moreText {
+  display: inline;
+}
+.moreInfo h2 {
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #111111;
+  font-family: "MyriadGEOMtavruli";
+}
+.productType {
+  color: #9c9c9c;
+  font-size: 14px;
+  font-family: "FiraGO";
+}
+.productAnswer {
+  color: #111111;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "FiraGO";
+}
+.moreInfoWrapper div {
+  padding: 10px 0;
+  border-bottom: 1px dotted #9c9c9c;
+}
+.moreInfo > div {
+  justify-content: space-between;
+}
+.moreInfoWrapper div {
+  display: flex;
+  justify-content: space-between;
+}
+.moreInfoWrapper {
+  width: 30%;
 }
