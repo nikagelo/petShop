@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/listing.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Zootopia</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container headerWrapper">
+        <a href="index.html">
+          <img src="images/zootopia-logo.png" alt="Zootopia Logo Icon" />
+        </a>
+        <div class="burgerMenuWrapper">
+          <div class="burgerMenu"></div>
+          <div class="burgerMenu"></div>
+          <div class="burgerMenu"></div>
+        </div>
+        <div class="lang none">
+          <span>GEO</span>
+          <span>ENG</span>
+        </div>
+        <div class="navWrapper">
+          <div class="nav">
+            <a href="#">
+              <img src="images/search.svg" alt="search Icon" />
+            </a>
+            <p>ძებნა</p>
+          </div>
+          <div class="nav">
+            <a href="#">
+              <img src="images/shopping-cart.svg" alt="shopping-cart Icon" />
+            </a>
+            <p>კალათა</p>
+          </div>
+          <div class="nav">
+            <a href="#">
+              <img src="images/smile.svg" alt="smile Icon" />
+            </a>
+            <p>შესვლა</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="topicWrapper container">
+      <a class="category" href="index.html">მთავარი</a>
+      <img src="images/angle-down.svg" alt="angle icon" />
+      <a class="category" href="#">ძაღლები</a>
+      <img src="images/angle-down.svg" alt="angle icon" />
+      <a class="subCategory" href="#">ზრდასრული ძაღლები</a>
+    </div>
+    <section class="container">
+      <aside>
+        <div class="range_container">
+          <span>ფასი</span>
+          <div class="sliders_control">
+            <input id="fromSlider" type="range" value="0" min="0" max="600" />
+            <input id="toSlider" type="range" value="600" min="0" max="600" />
+          </div>
+          <div class="form_control">
+            <div class="form_control_container">
+              <div class="form_control_container__time"></div>
+              <input
+                class="form_control_container__time__input"
+                type="number"
+                id="fromInput"
+                value="0"
+                min="0"
+                max="600"
+              />
+            </div>
+            <div class="form_control_container">
+              <div class="form_control_container__time"></div>
+              <input
+                class="form_control_container__time__input"
+                type="number"
+                id="toInput"
+                value="600"
+                min="000"
+                max="600"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>ასაკი</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="age">
+            <label class="containerCheck marginTop">
+              ახალდაბადებული
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              პატარა
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ზრდასრული
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ხნიერი
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>ცხოველის სახეობა</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="type">
+            <label class="containerCheck marginTop">
+              კატა
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ძაღლი
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              კურდღელი
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              კუ
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              თევზი
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              თუთიყუში
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>ბრენდი</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="brand">
+            <label class="containerCheck marginTop">
+              ბრენდი 1
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ბრენდი 2
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ბრენდი 3
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ბრენდი 4
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>მასალა</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="material">
+            <label class="containerCheck marginTop">
+              მასალა 1
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              მასალა 2
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              მასალა 3
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              მასალა 4
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>ჯიში</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="breed">
+            <label class="containerCheck marginTop">
+              ჯიში 1
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ჯიში 2
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ჯიში 3
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ჯიში 4
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>საკვების კლასი</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="class">
+            <label class="containerCheck marginTop">
+              კლასი 1
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              კლასი 2
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              კლასი 3
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              კლა 4
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>გემო</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="taste">
+            <label class="containerCheck marginTop">
+              გემო 1
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              გემო 2
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              გემო 3
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              გემო 4
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>ზომა</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="size">
+            <label class="containerCheck marginTop">
+              ზომა 1
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ზომა 2
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ზომა 3
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ზომა 4
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>ფორმა</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="form">
+            <label class="containerCheck marginTop">
+              ფორმა 1
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ფორმა 2
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ფორმა 3
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ფორმა 4
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>წონა</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="weight">
+            <label class="containerCheck marginTop">
+              წონა 1
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              წონა 2
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              წონა 3
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              წონა 4
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>ოჯახი</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="family">
+            <label class="containerCheck marginTop">
+              ოჯახი 1
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ოჯახი 2
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ოჯახი 3
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ოჯახი 4
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>ხასიათი</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="mood">
+            <label class="containerCheck marginTop">
+              ხასიათი 1
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ხასიათი 2
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ხასიათი 3
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ხასიათი 4
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="age">
+          <div class="toggle">
+            <span>წყლის ტემპერატურა</span>
+            <img
+              class="less"
+              src="images/angle-down-grey.svg"
+              alt="angle down"
+            />
+          </div>
+          <div id="water">
+            <label class="containerCheck marginTop">
+              ტემპერატურა 1
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ტემპერატურა 2
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ტემპერატურა 3
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="containerCheck">
+              ტემპერატურა 4
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <button class="filter">გაფილტვრა</button>
+      </aside>
+      <div class="productDiv">
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+        <div class="topProduct">
+          <div class="topProductImage">
+            <img src="images/food1.png" alt="dog food image" />
+          </div>
+          <div class="productTitleWrapper">
+            <h3>პედიგრი</h3>
+            <p>საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია.</p>
+          </div>
+          <div class="flex weightWrapper">
+            <div>
+              <div class="weight">600გრ.</div>
+              <div class="weight">2კგ.</div>
+            </div>
+            <div>
+              <div class="weight">5კგ.</div>
+              <div class="weight">13კგ</div>
+            </div>
+          </div>
+          <div class="pricesWrapper">
+            <div class="prices">
+              <span class="priceN">135₾</span>
+              <span class="priceO">160₾</span>
+            </div>
+            <img src="images/shopping-cart.svg" alt="shopping-cart icon" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="flex pagination">
+      <div>
+        <img
+          src="images/arrow-long-right-1-green.svg"
+          alt="arrow-long-right-1-green"
+        />
+      </div>
+      <div>
+        <a href="#">1</a>
+      </div>
+      <div><a href="#">2</a></div>
+      <div><a href="#">3</a></div>
+      <div><a href="#">4</a></div>
+      <div><a href="#">...</a></div>
+      <div><a href="#">142</a></div>
+      <div>
+        <img src="images/arrow-long-right.svg" alt="arrow-long-right" />
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="js/listing.js"></script>
+  </body>
+</html>
