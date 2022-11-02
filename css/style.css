@@ -936,6 +936,9 @@ footer div p {
 #productTxt.show-more .moreText {
   display: inline;
 }
+.moreInfo {
+  margin-bottom: 130px;
+}
 .moreInfo h2 {
   margin-bottom: 40px;
   font-size: 28px;
@@ -966,4 +969,8 @@ footer div p {
 }
 .moreInfoWrapper {
   width: 30%;
+}
+#bannerImg {
+  width: 350px;
+  height: 350px;
 }

@@ -22,3 +22,16 @@ minus.addEventListener("click", (e) => {
     count.innerHTML = cart--;
   }
 });
+// Pictures Slider
+let first = document.querySelector("#firstImg"),
+  second = document.querySelector("#secondImg"),
+  third = document.querySelector("#thirdImg"),
+  fourth = document.querySelector("#fourthImg");
+function changeImage(fileName) {
+  banner = document.querySelector("#bannerImg");
+  banner.setAttribute("src", fileName);
+}
+// first.addEventListener("click", changeImage("images/foodFront.png"));
+// second.addEventListener("click", changeImage("images/foodBack.png"));
+// third.addEventListener("click", changeImage("images/foodTypes.png"));
+// fourth.addEventListener("click", changeImage("images/foodVideo.png"));
