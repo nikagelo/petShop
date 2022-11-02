@@ -1,0 +1,54 @@
+@media (max-width: 480px) {
+  .info {
+    flex-wrap: wrap;
+  }
+  .topicWrapper {
+    display: none;
+  }
+  .infoImages {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .infoImages div:first-child {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .infoImages div:first-child div {
+    display: none;
+  }
+  .infoImages div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+  .infoImages div:nth-child(2) img {
+    margin: 0 auto;
+  }
+  .reverse {
+    margin: 0 auto;
+  }
+  .weights {
+    justify-content: space-between;
+  }
+  .weights > div {
+    width: 45%;
+    justify-content: center;
+  }
+  .moreInfo {
+    display: none;
+  }
+  .priceAndCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: unset;
+  }
+  .priceAndCart div:first-child {
+    display: none;
+  }
+  .counterWrapper,
+  .addCart {
+    width: 100%;
+  }
+}
