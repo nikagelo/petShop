@@ -391,6 +391,8 @@ header {
 .fishButtonContainer img {
   z-index: 1;
   margin-right: -10px;
+  width: 181px;
+  height: 97px;
 }
 .birdProductWrapper h2 {
   position: absolute;
@@ -399,6 +401,8 @@ header {
 }
 .item4 div img {
   margin-top: -20px;
+  width: 230px;
+  height: 220px;
 }
 /* Cards styles */
 .cards {
@@ -465,7 +469,8 @@ header {
   color: #6a6d14;
 }
 .cardA img {
-  width: 100%;
+  width: 378px;
+  height: 378px;
 }
 .cardB {
   position: relative;
@@ -494,6 +499,8 @@ header {
   margin-left: 40px;
 }
 .cardB img {
+  width: 490px;
+  height: 326px;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -607,7 +614,8 @@ header {
   margin-top: 56px;
 }
 .banner div img {
-  width: 100%;
+  width: 477px;
+  height: 366px;
 }
 .banner div span {
   color: #ffffff;
