@@ -998,3 +998,7 @@ footer div p {
   width: 15px;
   height: 15px;
 }
+.topProductImage img {
+  width: 100px;
+  height: 150px;
+}
