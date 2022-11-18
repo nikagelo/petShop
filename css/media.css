@@ -98,8 +98,8 @@
   }
   .banner div img {
     max-width: 480px;
-    width: 100%;
-    height: unset;
+    width: 200px;
+    height: 150px;
     object-fit: unset;
   }
   header {
