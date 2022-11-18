@@ -92,6 +92,16 @@
   .swiper {
     margin-top: -113px;
   }
+  .swiper .swiper-slide > img {
+    max-width: 480px;
+    width: 100%;
+  }
+  .banner div img {
+    max-width: 480px;
+    width: 100%;
+    height: unset;
+    object-fit: unset;
+  }
   header {
     position: relative;
     z-index: 2;
