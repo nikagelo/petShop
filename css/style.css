@@ -69,7 +69,7 @@ header {
 }
 .nav p {
   font-size: 12px;
-  font-family: "MyriadGEOMtavruli" sans-serif;
+  font-family: "MyriadGEOMtavruli";
 }
 /* Slider Section Styles */
 .swiper {
@@ -133,7 +133,7 @@ header {
 
 .topic p {
   font-size: 14px;
-  font-family: "MyriadGEOMtavruli" sans-serif;
+  font-family: "MyriadGEOMtavruli";
 }
 .firstTopicWrapper {
   background-color: #f1f7e9;
@@ -205,7 +205,7 @@ header {
 }
 .topProduct h3 {
   font-size: 18px;
-  font-family: "MyriadGEOMtavruli" sans-serif;
+  font-family: "MyriadGEOMtavruli";
   color: #111111;
   margin-top: 19px;
   margin-bottom: 9px;
@@ -215,7 +215,7 @@ header {
 }
 .productTitleWrapper p {
   color: #6e6e6e;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   font-size: 12px;
   margin-bottom: 16px;
   line-height: 18px;
@@ -248,12 +248,12 @@ header {
 }
 .priceN {
   color: #f5621f;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   font-size: 24px;
 }
 .priceO {
   color: #111111;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   font-size: 11px;
   text-decoration: line-through;
 }
@@ -344,7 +344,7 @@ header {
 .dogProductWrapper h4 {
   font-size: 14px;
   color: #ffffff;
-  font-family: "MyriadGEOMtavruli" sans-serif;
+  font-family: "MyriadGEOMtavruli";
 }
 .dogProductWrapper h2,
 .fishProductWrapper h2,
@@ -353,7 +353,7 @@ header {
   font-size: 18px;
   color: #ffffff;
   line-height: 22px;
-  font-family: "MyriadGEOMtavruli" sans-serif;
+  font-family: "MyriadGEOMtavruli";
   margin-top: 28px;
   margin-bottom: 32px;
 }
@@ -363,7 +363,7 @@ header {
 .birdProductWrapper h2 span {
   font-size: 24px;
   color: #ffffff;
-  font-family: "MyriadGEOMtavruli" sans-serif;
+  font-family: "MyriadGEOMtavruli";
 }
 .productButton {
   width: 160px;
@@ -371,7 +371,7 @@ header {
   border: none;
   font-size: 12px;
   color: #111111;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   background-color: #ffffff;
   border-radius: 6px;
 }
@@ -422,12 +422,12 @@ header {
 .topProducts h2 {
   color: #111111;
   font-size: 28px;
-  font-family: "MyriadGEOMtavruli" sans-serif;
+  font-family: "MyriadGEOMtavruli";
 }
 .topProducts span {
   font-size: 14px;
   color: #9c9c9c;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
 }
 .cardA {
   display: flex;
@@ -530,7 +530,7 @@ header {
   border: none;
   font-size: 12px;
   color: #111111;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   background-color: #ffffff;
   border-radius: 6px;
 }
@@ -561,13 +561,13 @@ header {
 }
 .priceNT {
   color: #ffffff;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   font-size: 24px;
   margin-left: 40px;
 }
 .priceOT {
   color: #ffffff;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   font-size: 11px;
   text-decoration: line-through;
   opacity: 60%;
@@ -667,7 +667,7 @@ footer div p {
   max-width: 378px;
   font-size: 12px;
   color: #6e6e6e;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   margin-top: 27px;
   line-height: 23px;
 }
@@ -684,19 +684,19 @@ footer div p {
   color: #111111;
   font-size: 14px;
   margin-bottom: 31px;
-  font-family: "MyriadGEOMtavruli" sans-serif;
+  font-family: "MyriadGEOMtavruli";
   font-weight: bold;
 }
 .footerNav h6 {
   color: #111111;
   font-size: 12px;
   margin-bottom: 16px;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   font-weight: bold;
 }
 .footerNav div ul li {
   font-size: 12px;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   margin-bottom: 16px;
 }
 .footerNav div ul li a {
@@ -704,7 +704,7 @@ footer div p {
 }
 .footerNav div a {
   color: #111111;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   font-size: 12px;
 }
 #fb {
@@ -732,12 +732,12 @@ footer div p {
 .allRights {
   font-size: 14px;
   color: #9c9c9c;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
 }
 .madeBy {
   color: #111111;
   font-size: 14px;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
 }
 .madeBy span {
   color: #74b42c;
@@ -750,13 +750,13 @@ footer div p {
   color: #c8c8c8;
   font-size: 14px;
 
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
 }
 .subCategory {
   color: #111111;
   font-size: 14px;
 
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
 }
 .aboutUs div:first-child {
   margin-bottom: 68px;
@@ -772,12 +772,12 @@ footer div p {
 }
 .aboutUs div h2 {
   font-size: 28px;
-  font-family: "MyriadGEOMtavruli" sans-serif;
+  font-family: "MyriadGEOMtavruli";
   color: #111111;
 }
 .aboutUs div p {
   font-size: 14px;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   color: #111111;
   line-height: 24px;
   margin-top: 30px;
@@ -810,12 +810,12 @@ footer div p {
   margin-bottom: 9px;
   font-size: 14px;
   color: #9c9c9c;
-  font-family: "MyriadGEOMtavruli" sans-serif;
+  font-family: "MyriadGEOMtavruli";
 }
 .contactDiv span {
   font-size: 18px;
   color: #111111;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   line-height: 22px;
 }
 /* Product Page Styles */
@@ -864,7 +864,7 @@ footer div p {
 
 .productInfo div:first-child div div span {
   color: #111111;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   font-size: 12px;
 }
 .weights {
@@ -875,14 +875,14 @@ footer div p {
 }
 .productInfo p {
   color: #111111;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   font-size: 12px;
   max-width: 378px;
   line-height: 19px;
 }
 .productInfo button {
   color: #9c9c9c;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
   font-size: 12px;
   border: none;
   background-color: transparent;
@@ -955,18 +955,18 @@ footer div p {
   margin-bottom: 40px;
   font-size: 28px;
   color: #111111;
-  font-family: "MyriadGEOMtavruli" sans-serif;
+  font-family: "MyriadGEOMtavruli";
 }
 .productType {
   color: #9c9c9c;
   font-size: 14px;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
 }
 .productAnswer {
   color: #111111;
   font-size: 14px;
   font-weight: bold;
-  font-family: "FiraGO" sans-serif;
+  font-family: "FiraGO";
 }
 .moreInfoWrapper div {
   padding: 10px 0;
@@ -1009,4 +1009,7 @@ footer div p {
 .contactDiv img {
   width: 20px;
   height: 24px;
+}
+* {
+  font-display: swap;
 }
